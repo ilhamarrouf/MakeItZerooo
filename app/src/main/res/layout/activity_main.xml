@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context="com.ilhamarrouf.makeitzero.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding"
+                android:fontFamily="@font/gooddog"
+                android:text="Score: 0"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding"
+                android:fontFamily="@font/gooddog"
+                android:text="60"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/equation_text"
+            style="@style/TextViewforGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="1470"
+            android:textSize="@dimen/text_size" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:columnCount="3">
+
+            <TextView
+                android:id="@+id/variabel1"
+                style="@style/TextViewforGrid"
+                android:gravity="center"
+                android:tag="number" />
+
+            <TextView
+                android:id="@+id/variabel2"
+                style="@style/TextViewforGrid"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/variabel3"
+                style="@style/TextViewforGrid"
+                android:gravity="center"
+                android:tag="number" />
+
+            <TextView
+                android:id="@+id/variabel4"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/variabel5"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/variabel6"
+                style="@style/TextViewforGrid"
+                android:tag="number" />
+
+            <TextView
+                android:id="@+id/variabel7"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/variabel8"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/sign1"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/sign2"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/sign3"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/sign4"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/sign5"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/sign6"
+                style="@style/TextViewforGrid" />
+
+            <TextView
+                android:id="@+id/equalsign"
+                style="@style/TextViewforGrid"
+                android:text="=" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bttn_plain"
+            android:elevation="5dp"
+            android:fontFamily="@font/gooddog"
+            android:paddingHorizontal="48dp"
+            android:paddingVertical="@dimen/padding"
+            android:text="restart"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_capsule"
+        android:elevation="8dp"
+        android:paddingVertical="@dimen/padding"
+        android:paddingHorizontal="48dp"
+        android:fontFamily="@font/gooddog"
+        android:text="@string/welcome_text"
+        android:textSize="@dimen/text_size"/>
+
+</FrameLayout>
